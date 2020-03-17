@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.android.architectureexample"
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -72,6 +72,11 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     // For Kotlin use kapt instead of annotationProcessor
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    // implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.4.0")
 
     // optional - RxJava support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
